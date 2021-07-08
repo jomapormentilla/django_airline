@@ -5,4 +5,13 @@
     <p>Origin: {{ flight.origin }} </p>
     <p>Destination: {{ flight.destination }} </p>
     <p>Duration: {{ flight.duration }} </p>
+
+    <h1>Passengers:</h1>
+    <ul>
+        {% for passenger in passengers %}
+            <li>{{ passenger }}</li>
+        {% empty %}
+            <li>No Passengers</li>
+        {% endfor %}
+    </ul>
 {% endblock %}
