@@ -1,1 +1,1 @@
-# django_airline
+# More Django Practice
